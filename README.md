@@ -1,42 +1,46 @@
 # Haneen-AI-Customer-Service-Chatbot-using-FlowiseAI
 
 
-Project Overview
+Project Overview:
 
 A Retrieval-Augmented Generation (RAG) chatbot designed for Haneen Company. It uses local LLMs to provide accurate, context-aware customer support based on a private knowledge base.
 
-Tech Stack
+Tech Stack:
 
-Orchestration: FlowiseAI
+  - Orchestration: FlowiseAI
 
-LLM: Llama 3 (via Ollama)
+  - LLM: Llama 3 (via Ollama)
 
-Embeddings: all-minilm
+  - Embeddings: all-minilm
 
-Vector Store:In-Memory
+  - Vector Store:In-Memory
 
-Environment: Run on MacBook Air (Apple Silicon) using Docker.
+  - Environment: Run on MacBook Air using Docker.
 
-System Architecture
 
-Data Ingestion: knowledge.txt processed via RecursiveCharacterText Splitter.
 
-Vectorization: Text chunks converted to embeddings using all-minilm.
+System Architecture:
 
-Retrieval: Similarity search to find relevant context for user queries.
+  - Data Ingestion: knowledge.txt processed via RecursiveCharacterText Splitter.
 
-Generation: Llama 3 generates concise answers strictly from the retrieved context.
+  - Vectorization: Text chunks converted to embeddings using all-minilm.
 
-How to Run
+  - Retrieval: Similarity search to find relevant context for user queries.
 
-Install Ollama, pull Llama 3 and all-minilm: 
+  - Generation: Llama 3 generates concise answers strictly from the retrieved context.
 
-ollama pull llama3. 
 
-ollama pull all-minilm.
+  
+How to Run:
 
-Run Flowise via Docker.
+ - Install Ollama, pull Llama 3 and all-minilm: 
 
-Import the JSON workflow file (provided in this repo).
+    ollama pull llama3. 
 
-Upload knowledge.txt
+    ollama pull all-minilm.
+
+  - Run Flowise via Docker.
+
+  - Import the JSON workflow file (provided in this repo).
+
+  - Upload knowledge.txt
